@@ -3,7 +3,7 @@
 <body>
 
 <header>
-<img src="TH logo.png" alt="Tourney Host Logo" width="619.5" height="449.625">
+<img src="TH logo.png" alt="Tourney Host Logo" width="156.875" height="112.40625">
 </header>
 
 <section>
