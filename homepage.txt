@@ -3,6 +3,7 @@
 <body>
 
 <header>
+<img src="TH logo.png" alt="Italian Trulli">
 </header>
 
 <section>
