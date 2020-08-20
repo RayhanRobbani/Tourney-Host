@@ -4,11 +4,6 @@
 }
 body{
   background-color: #0d0d0d;
-  background-image: url(bg.jpg);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.5;
@@ -16,7 +11,7 @@ body{
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: auto;
     overflow: hidden;
 }
@@ -57,10 +52,11 @@ header h1 {
   color: rgb(72, 33, 145);
 }
 
-header a {
+a {
   background-color: rgb(72, 33, 145);
   padding: 15px 20px;
   border: none;
+  border-radius: 5px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -68,8 +64,65 @@ header a {
 
 }
 
-header a:hover {
+a:hover {
   background-color: rgb(93, 42, 187);
   box-shadow: 0 0px 10px 4px rgb(93, 42, 187);
   transition-duration: 0.3s;
+  font-weight: bold;
+}
+
+.box1 {
+  background: rgb(26, 26, 26, 0.80);
+  border-radius: 5px;
+  box-shadow: 0 0px 12px 5px rgb(72, 33, 145);
+  margin: 5%;
+  padding: 30px 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.box1:hover {
+  background: rgb(26, 26, 26, 0.95);
+}
+
+.box2 {
+  background: rgb(26, 26, 26, 0.80);
+  border-radius: 5px;
+  box-shadow: 0 0px 12px 5px rgb(72, 33, 145);
+  margin: 5%;
+  padding: 30px 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.box2:hover {
+  background: rgb(26, 26, 26, 0.95);
+}
+
+section {
+  background: url(bg.jpg); /* 0 -100px */
+  height: 100%;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+section h1, p{
+  letter-spacing: 5px;
+  word-spacing: 2px;
+}
+
+section a {
+  float: right;
+}
+
+.float {
+  display: flow-root;
+}
+
+footer {
+  background: rgb(26, 26, 26, 0.80);
+  padding: 30px 30px;
+  text-align: center;
 }
