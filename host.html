@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tourney Host | Host Tournament</title>
     <link rel="icon" href="TH logo icon.png">
-    <link rel="stylesheet" type="text/css" href="host.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
 
   <body>
     <header>
-      <div class="container">
+      <div class="headcontainer">
         <div id="branding">
           <img src="TH logo.png" alt="Tourney Host Logo" width="100px">
         </div>
@@ -24,14 +24,41 @@
         <nav>
           <ul>
             <li>
-                <a href="live.html">Live Tournaments!</a>
+                <a class="button" href="live.html">Live Tournaments!</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section>
+    <section class="host">
+      <div class="bodycontainer">
+        <form class="boxleft">
+            <h1>Tournament Info</h1>
+            <label for="tournamentname">Tournament Name</label><br>
+            <input type="text" id="tournamentname" name="tournamentname" required autofocus><br>
+            <label for="hostname">Host Name</label><br>
+            <input type="text" id="hostname" name="hostname" required><br>
+            <label for="teamnum">Number of Teams</label><br>
+            <input list="teamnum" name="teamnum" placeholder="16" pattern="[16]{2}" required><br>
+              <datalist id="teamnum">
+                <option value="16">
+              </datalist>
+            <label for="startdate">Starting Date</label><br>
+            <input type="date" id="startdate" name="startdate" required><br>
+            <br>
+            <h1>Personal Info</h1>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required><br>
+            <label for="contactnum">Contact Number</label><br>
+            <input type="tel" id="contactnum" name="contactnum" placeholder="01XXX-XXXXXX" pattern="[0-9]{11}" required><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <input class="button" type="submit" value="Submit">
+        </form>
+        <h1 class="boxright">Home</h1>
+        <h1 class="boxright">Home</h1>
+      </div>
     </section>
 
     <footer>
