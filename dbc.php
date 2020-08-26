@@ -1,10 +1,10 @@
 <?php
 
-$dbServername = "localhost";
-$dbUsername = "TourneyHost";
-$dbPassword = "th789456123";
-$dbName = "tourney host";
+  $dbServername = "localhost";
+  $dbUsername = "root";
+  $dbPassword = "";
+  $dbName = "tourneyhost";
 
-$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+  $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 
 ?>
