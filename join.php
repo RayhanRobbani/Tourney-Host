@@ -4,7 +4,7 @@
   $result = mysqli_query($conn, $sql);
   $option = '';
   while($row = mysqli_fetch_assoc($result)){
-    $option .= '<option value = "'.$row['tournamentname'] .'">' .$row['tournamentname'] .'</option>';
+    $option .= '<option value = "' . $row['tournamentname'] . '">' . $row['tournamentname'] . '</option>';
   }
 ?>
 
@@ -43,10 +43,10 @@
 
     <section class="join">
       <div class="bodycontainer">
-        <form class="boxleft">
+        <form class="boxleft" action="team.php" method="POST">
             <h1>Team Info</h1>
             <label for="tournamentname">Select a Tournament</label><br>
-            <select class="input" required autofocus>
+            <select class="input" id="tournamentname" name="tournamentname" required autofocus>
               <option disabled selected hidden>Select</option>
               <?php
               echo "$option";
