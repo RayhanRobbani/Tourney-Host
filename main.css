@@ -30,7 +30,7 @@ body{
 
 /*HEADER*/
 header {
-  background: rgb(26, 26, 26, 0.80);
+  background: rgb(26, 26, 26, 0.95);
   padding-top: 10px;
   min-height: 70px;
   box-shadow: 0 5px 8px 0 rgb(72, 33, 145);

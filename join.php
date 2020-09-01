@@ -56,8 +56,8 @@
             <input class="input" type="text" id="teamname" name="teamname" required><br>
             <label for="teamtag">Team Tag</label><br>
             <input class="input" type="text" id="teamtag" name="teamtag" required><br>
-            <label for="teammail">E-mail</label><br>
-            <input class="input" type="email" id="teammail" name="teammail" placeholder="example@example.com" required><br>
+            <label for="teamemail">E-mail</label><br>
+            <input class="input" type="email" id="teamemail" name="teamemail" placeholder="example@example.com" required><br>
             <label for="contactteam">Contact Number</label><br>
             <input class="input" type="tel" id="contactteam" name="contactteam" placeholder="01XXXXXXXXX" pattern="[0-9]{11}" required><br>
             <br>
