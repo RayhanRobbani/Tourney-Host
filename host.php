@@ -40,7 +40,8 @@
             <label for="hostname">Host Name</label><br>
             <input class="input" type="text" id="hostname" name="hostname" required><br>
             <label for="teamnum">Number of Teams</label><br>
-            <select class="input" id="teamnum" name="teamnum">
+            <select class="input" id="teamnum" name="teamnum" required>
+              <option disabled selected hidden>Select</option>
               <option value="16">16</option>
             </select></br>
             <label for="startdate">Starting Date</label><br>
