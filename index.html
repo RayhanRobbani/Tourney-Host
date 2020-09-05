@@ -36,19 +36,22 @@
       <div class="bodycontainer">
         <div class="boxleft">
           <h1>Host Tournament</h1>
-          <p>Host your own Tournaments here on this website and manage them very easily and quicky with a very few clicks.</p>
+          <p>Host your tournaments here on this website and manage them very easily and quicky with a very few clicks.</p>
           <div>
             <a class="button" href="host.php">Create Tournament</a>
           </div>
         </div>
 
-        <div class="boxright">
-          <h1 id="id01">Log-In</h1>
-          <p id="id02">Already hosting a tournament?</p>
+        <form class="boxright">
+          <h1>Log In</h1>
+          <p>Already hosting a tournament? Login here to manage your tournament.</p>
+          <input class="input" type="email" id="teamemail" name="teamemail" placeholder="E-mail" required><br>
+          <input class="input" type="password" id="password" name="password" placeholder="Password" required><br>
+          <br>
           <div>
-            <p id="id03" class="button"><</p>
+            <input class="button" type="submit" value="Login">
           </div>
-        </div>
+        </form>
 
         <div class="boxleft">
           <h1>Join Tournament</h1>

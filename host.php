@@ -48,7 +48,7 @@
             <input class="input" type="date" id="startdate" name="startdate" required><br>
             <br>
             <h1>Personal Info</h1>
-            <label for="hostmail">E-mail</label><br>
+            <label for="hostemail">E-mail</label><br>
             <input class="input" type="email" id="hostemail" name="hostemail" placeholder="example@example.com" required><br>
             <label for="contacthost">Contact Number</label><br>
             <input class="input" type="tel" id="contacthost" name="contacthost" placeholder="01XXXXXXXXX" pattern="[0-9]{11}" required><br>
@@ -56,7 +56,7 @@
             <input class="input" type="password" id="password" name="password" required><br>
             <br>
             <div>
-              <input class="button" type="submit" value="Submit">
+              <input class="button" type="submit" value="Register Tournament">
             </div>
         </form>
         <h1 class="boxright">Home</h1>

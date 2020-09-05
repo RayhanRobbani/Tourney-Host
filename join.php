@@ -62,7 +62,7 @@
             <input class="input" type="tel" id="contactteam" name="contactteam" placeholder="01XXXXXXXXX" pattern="[0-9]{11}" required><br>
             <br>
             <div>
-              <input class="button" type="submit" value="Submit">
+              <input class="button" type="submit" value="Register Team">
             </div>
         </form>
       </div>
