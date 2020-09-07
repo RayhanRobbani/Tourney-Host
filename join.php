@@ -34,7 +34,7 @@
         <nav>
           <ul>
             <li>
-                <a class="button" href="live.html">Live Tournaments!</a>
+                <a class="button" href="live.php">Live Tournaments!</a>
             </li>
           </ul>
         </nav>
