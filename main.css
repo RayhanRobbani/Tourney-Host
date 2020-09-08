@@ -30,7 +30,7 @@ body{
 
 /*HEADER*/
 header {
-  background: rgb(26, 26, 26, 0.95);
+  background: rgb(20, 20, 20, 0.95);
   padding-top: 10px;
   min-height: 70px;
   box-shadow: 0 5px 8px 0 rgb(72, 33, 145);
@@ -55,14 +55,14 @@ header h1 {
 
 header nav {
   float: right;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 header li {
   float: left;
   display: inline;
-  padding: 0 0px;
+  padding: 0 12px;
 }
 
 
@@ -76,7 +76,8 @@ header li {
   text-decoration: none;
   cursor: pointer;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: bold;
   float: right;
   display: flow-root;
 }
@@ -91,30 +92,35 @@ header li {
 /*SECTION*/
 /*SECTION BACKGROUNDS*/
 .index {
-  background: url(bg.jpg) 0 -100px;
-  /* height: 100%; */
-  min-height: 700px;
-  background-repeat: no-repeat;
+  background: url(bg.png);
   background-size: cover;
-  background-attachment: scroll;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .host {
-  background: url(host.jpg) 0 -150px;
-  /* height: 100%; */
-  min-height: 700px;
-  background-repeat: no-repeat;
+  background: url(host.png);
   background-size: cover;
-  background-attachment: scroll;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .join {
-  background: url(join.jpg) 0 -100px;
-  /* height: 100%; */
-  min-height: 700px;
-  background-repeat: no-repeat;
+  background: url(join.png);
   background-size: cover;
-  background-attachment: scroll;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.live {
+  background: url(live.png);
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 section h1, p{
@@ -123,8 +129,14 @@ section h1, p{
   padding-bottom: 15px;
 }
 
+hr {
+  border: 2px solid rgb(72, 33, 145);
+  border-radius: 10px;
+}
+
 .boxleft {
-  background: rgb(26, 26, 26, 0.80);
+  overflow: hidden;
+  background: rgb(20, 20, 20, 0.80);
   border-radius: 5px;
   box-shadow: 0 0px 12px 5px rgb(72, 33, 145);
   width: 60%;
@@ -136,11 +148,11 @@ section h1, p{
   float: left;
 }
 .boxleft:hover {
-  background: rgb(26, 26, 26, 0.95);
+  background: rgb(20, 20, 20, 0.95);
 }
 
 .boxright {
-  background: rgb(26, 26, 26, 0.80);
+  background: rgb(20, 20, 20, 0.80);
   border-radius: 5px;
   box-shadow: 0 0px 12px 5px rgb(72, 33, 145);
   width: 20%;
@@ -152,7 +164,26 @@ section h1, p{
   float: right;
 }
 .boxright:hover {
-  background: rgb(26, 26, 26, 0.95);
+  background: rgb(20, 20, 20, 0.95);
+}
+
+.teamrow {
+  display: flex;
+  align-items: center;
+}
+
+.teams {
+  background: rgb(62, 28, 125, 0.20);
+  border: 2px solid rgb(72, 33, 145);
+  border-radius: 10px;
+  padding: 20px 20px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vs {
+  padding-top: 23px;
 }
 
 
@@ -166,7 +197,7 @@ section h1, p{
   margin-bottom: 10px;
   margin-left: ;
   border: 3px solid rgb(72, 33, 145);
-  background-color: rgb(26, 26, 26, 0.4);
+  background-color: rgb(20, 20, 20, 0.4);
   color: #ffffff;
   border-radius: 5px;
 }
@@ -175,7 +206,7 @@ section h1, p{
 
 /*FOOTER*/
 footer {
-  background: rgb(26, 26, 26, 0.80);
+  background: rgb(20, 20, 20, 0.80);
   border-top: rgb(72, 33, 145) 3px solid;
   padding: 25px 0 15px 0;
   text-align: center;

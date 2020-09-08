@@ -15,7 +15,7 @@
     }
 
     for($i = 1; $i < count($tournaments); $i++){
-      echo '<h1>' . $tournaments[$i]['tournamentname'] . '</h1>';
+      echo '<div class="boxleft"><h1>' . $tournaments[$i]['tournamentname'] . '</h1><hr>';
       $temp = $tournaments[$i]['tournamentname'];
 
       $fetchteam = "SELECT teamname FROM teams WHERE tournamentname = '$temp';";
@@ -25,9 +25,10 @@
         $teams[] = $rowteam;
       }
 
-      for($j = 0; $j < count($teams); $j++){
-        echo $teams[$j]['teamname'] . '<br>';
+      for($j = 0; $j < count($teams); $j+=2){
+        echo '<div class="teamrow"><span class="teams">' . $teams[$j]['teamname'] . '</span><span class="vs"><img src="vs.png" alt="Vs" width="70px"></span><span class="teams">' . $teams[$j+1]['teamname'] . '</span></div>';
       }
+      echo '</div>';
       unset($teams);
     }
   }
