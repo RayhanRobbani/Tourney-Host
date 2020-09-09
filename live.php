@@ -40,6 +40,17 @@
         <?php
           showlist();
         ?>
+        <div class="rightcontainer">
+
+          <form id="login" class="boxes" action="login.php" method="POST">
+            <h1>Log In</h1>
+            <p>Already hosting a tournament? Login here to manage your tournament.</p>
+            <div id='here'>
+              <span class="button" onclick="loginfunc()">Here</span>
+            </div>
+          </form>
+
+        </div>
       </div>
     </section>
 

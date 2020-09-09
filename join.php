@@ -43,8 +43,9 @@
 
     <section class="join">
       <div class="bodycontainer">
-        <form class="boxleft" action="team.php" method="POST">
-            <h1>Team Info</h1>
+        <div class="leftcontainer">
+        <form class="boxes" action="team.php" method="POST">
+            <h1 align="center">Team Info</h1>
             <label for="tournamentname">Select a Tournament</label><br>
             <select class="input" id="tournamentname" name="tournamentname" required autofocus>
               <option disabled selected hidden>Select</option>
@@ -65,6 +66,20 @@
               <input class="button" type="submit" value="Register Team">
             </div>
         </form>
+        </div>
+
+        <div class="rightcontainer">
+
+          <form id="login" class="boxes" action="login.php" method="POST">
+            <h1>Log In</h1>
+            <p>Already hosting a tournament? Login here to manage your tournament.</p>
+            <div id='here'>
+              <span class="button" onclick="loginfunc()">Here</span>
+            </div>
+          </form>
+
+        </div>
+
       </div>
     </section>
 

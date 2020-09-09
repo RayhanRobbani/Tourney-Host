@@ -33,8 +33,9 @@
 
     <section class="host">
       <div class="bodycontainer">
-        <form class="boxleft" action="tournament.php" method="POST">
-            <h1>Tournament Info</h1>
+        <div class="leftcontainer">
+        <form class="boxes" action="tournament.php" method="POST">
+            <h1 align="center">Tournament Info</h1>
             <label for="tournamentname">Tournament Name</label><br>
             <input class="input" type="text" id="tournamentname" name="tournamentname" required autofocus><br>
             <label for="hostname">Host Name</label><br>
@@ -47,7 +48,7 @@
             <label for="startdate">Starting Date</label><br>
             <input class="input" type="date" id="startdate" name="startdate" required><br>
             <br>
-            <h1>Personal Info</h1>
+            <h1 align="center">Personal Info</h1>
             <label for="hostemail">E-mail</label><br>
             <input class="input" type="email" id="hostemail" name="hostemail" placeholder="example@example.com" required><br>
             <label for="contacthost">Contact Number</label><br>
@@ -59,8 +60,20 @@
               <input class="button" type="submit" value="Register Tournament">
             </div>
         </form>
-        <h1 class="boxright">Home</h1>
-        <h1 class="boxright">Home</h1>
+        </div>
+
+        <div class="rightcontainer">
+
+          <form id="login" class="boxes" action="login.php" method="POST">
+            <h1>Log In</h1>
+            <p>Already hosting a tournament? Login here to manage your tournament.</p>
+            <div id='here'>
+              <span class="button" onclick="loginfunc()">Here</span>
+            </div>
+          </form>
+
+        </div>
+
       </div>
     </section>
 

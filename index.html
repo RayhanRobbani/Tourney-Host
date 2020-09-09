@@ -32,31 +32,42 @@
     </header>
 
     <section class="index">
-      <div class="bodycontainer">
-        <div class="boxleft">
-          <h1>Host Tournament</h1>
-          <p>Host your tournaments here on this website and manage them very easily and quicky with a very few clicks.</p>
-          <div>
-            <a class="button" href="host.php">Create Tournament</a>
-          </div>
-        </div>
 
-        <form id="login" class="boxright" action="login.php" method="POST">
-          <h1>Log In</h1>
-          <p>Already hosting a tournament? Login here to manage your tournament.</p>
-          <div id='here'>
-            <span class="button" onclick="loginfunc()">Here</span>
-          </div>
-        </form>
+        <div class="bodycontainer">
 
-        <div class="boxleft">
-          <h1>Join Tournament</h1>
-          <p>Join any ongoing tournament here on this website by simply registering your team.</p>
-            <div>
-              <a class="button" href="join.php">Participate</a>
+          <div class="leftcontainerindex">
+
+            <div class="boxes">
+              <h1>Host Tournament</h1>
+              <p>Host your tournaments here on this website and manage them very easily and quicky with a very few clicks.</p>
+              <div>
+                <a class="button" href="host.php">Create Tournament</a>
+              </div>
             </div>
+
+            <div class="boxes">
+              <h1>Join Tournament</h1>
+              <p>Participate in any ongoing tournament here on this website by simply registering your team.</p>
+                <div>
+                  <a class="button" href="join.php">Participate</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="rightcontainer">
+
+            <form id="login" class="boxes" action="login.php" method="POST">
+              <h1>Log In</h1>
+              <p>Already hosting a tournament? Login here to manage your tournament.</p>
+              <div id='here'>
+                <span class="button" onclick="loginfunc()">Here</span>
+              </div>
+            </form>
+
+          </div>
+
         </div>
-      </div>
+
     </section>
 
     <footer>
