@@ -1,5 +1,7 @@
 <?php
   include_once 'livelist.php';
+  include_once "upcominglist.php";
+  include_once "openlist.php";
 ?>
 
 <!DOCTYPE html>
@@ -37,19 +39,30 @@
 
     <section class="live">
       <div class="bodycontainer">
-        <?php
-          showlist();
-        ?>
+
+        <div class="leftcontainer">
+          <div id="liveText01Area">
+            <h1 id="liveText01" align="center" style="font-size:100px">Live NOW!</h1>
+          </div>
+          <?php
+            livetournaments();
+          ?>
+        </div>
+
         <div class="rightcontainer">
+          <div class="boxes boxFadeInTop">
+            <h1 align="center" style="font-size:47px">Upcoming Tournaments</h1><hr>
+            <?php
+              upcomingtournaments();
+            ?>
+          </div>
 
-          <form id="login" class="boxes" action="login.php" method="POST">
-            <h1>Log In</h1>
-            <p>Already hosting a tournament? Login here to manage your tournament.</p>
-            <div id='here'>
-              <span class="button" onclick="loginfunc()">Here</span>
-            </div>
-          </form>
-
+          <div class="boxes boxFadeInRight">
+            <h1 id="liveText02" align="center" style="font-size:51px">Open for registration!</h1><hr>
+            <?php
+              opentournaments();
+            ?>
+          </div>
         </div>
       </div>
     </section>

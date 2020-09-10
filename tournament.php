@@ -12,4 +12,3 @@
   $sql = "INSERT INTO tournaments (tournamentname, hostname, teamnum, startdate, hostemail, contacthost, password, registeredteamnum) VALUES ('$tournamentname', '$hostname', '$teamnum', '$startdate', '$hostemail', '$contacthost', '$password', 0);";
   mysqli_query($conn, $sql);
   header("Location: index.html?tournament=success");
-?>

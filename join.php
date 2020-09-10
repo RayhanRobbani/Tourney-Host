@@ -1,5 +1,7 @@
 <?php
   include_once 'dbc.php';
+  include_once "openlist.php";
+
   $sql = "SELECT tournamentname FROM tournaments WHERE registeredteamnum < teamnum ORDER BY tournamentname ASC;";
   $result = mysqli_query($conn, $sql);
   $option = '';
@@ -44,7 +46,7 @@
     <section class="join">
       <div class="bodycontainer">
         <div class="leftcontainer">
-        <form class="boxes" action="team.php" method="POST">
+        <form class="boxes boxFadeInLeft" action="team.php" method="POST">
             <h1 align="center">Team Info</h1>
             <label for="tournamentname">Select a Tournament</label><br>
             <select class="input" id="tournamentname" name="tournamentname" required autofocus>
@@ -69,15 +71,12 @@
         </div>
 
         <div class="rightcontainer">
-
-          <form id="login" class="boxes" action="login.php" method="POST">
-            <h1>Log In</h1>
-            <p>Already hosting a tournament? Login here to manage your tournament.</p>
-            <div id='here'>
-              <span class="button" onclick="loginfunc()">Here</span>
-            </div>
-          </form>
-
+          <div class="boxes boxFadeInRight">
+            <h1 id="liveText02" align="center" style="font-size:51px">Open for registration!</h1><hr>
+            <?php
+              opentournaments();
+            ?>
+          </div>
         </div>
 
       </div>

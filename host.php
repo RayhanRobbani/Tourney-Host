@@ -1,3 +1,6 @@
+<?php
+  include_once "upcominglist.php";
+?>
 <!DOCTYPE html>
 <html>
 
@@ -34,7 +37,7 @@
     <section class="host">
       <div class="bodycontainer">
         <div class="leftcontainer">
-        <form class="boxes" action="tournament.php" method="POST">
+        <form class="boxes boxFadeInLeft" action="tournament.php" method="POST">
             <h1 align="center">Tournament Info</h1>
             <label for="tournamentname">Tournament Name</label><br>
             <input class="input" type="text" id="tournamentname" name="tournamentname" required autofocus><br>
@@ -64,13 +67,12 @@
 
         <div class="rightcontainer">
 
-          <form id="login" class="boxes" action="login.php" method="POST">
-            <h1>Log In</h1>
-            <p>Already hosting a tournament? Login here to manage your tournament.</p>
-            <div id='here'>
-              <span class="button" onclick="loginfunc()">Here</span>
-            </div>
-          </form>
+          <div class="boxes boxFadeInTop">
+            <h1 align="center" style="font-size:47px">Upcoming Tournaments</h1><hr>
+            <?php
+              upcomingtournaments();
+            ?>
+          </div>
 
         </div>
 
